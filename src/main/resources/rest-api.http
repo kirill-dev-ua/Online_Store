@@ -1,0 +1,67 @@
+GET http://localhost:8080/api/v1/categories/6
+Accept: application/json
+
+###
+
+GET http://localhost:8080/api/v1/categories?size=100
+Accept: application/json
+
+###
+
+GET http://localhost:8080/api/v1/categories?size=101
+Accept: application/json
+
+###
+
+GET http://localhost:8080/api/v1/categories/44
+Accept: application/json
+
+###
+
+GET http://localhost:8080/api/v1/categories
+Accept: application/json
+
+###
+
+PUT http://localhost:8080/api/v1/categories/6
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "test1"
+}
+
+###
+
+PUT http://localhost:8080/api/v1/categories/6
+Content-Type: application/json
+Accept: application/json
+
+{
+"name": "test01"
+}
+
+###
+
+POST http://localhost:8080/api/v1/categories
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "test44"
+}
+
+###
+
+POST http://localhost:8080/api/v1/categories
+Content-Type: application/json
+Accept: application/json
+
+{
+"name": "test_1"
+}
+
+###
+
+DELETE http://localhost:8080/api/v1/categories/5
+Accept: application/json
